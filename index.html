@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vibe Code Academy — Level 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css">
+  <style>
+    :root { --theme-color: #6EE7B7; }
+    .sidebar { background-color: #0F172A; }
+    .sidebar-toggle { background-color: #0F172A; }
+    .markdown-section code {
+      background: #1E293B;
+      color: #6EE7B7;
+      border-radius: 4px;
+      padding: 2px 6px;
+    }
+    .markdown-section pre > code { background: transparent; padding: 0; }
+    .sidebar-nav li.active > a { color: #6EE7B7; }
+  </style>
+</head>
+<body>
+  <div id="app">Loading...</div>
+  <script>
+    window.$docsify = {
+      name: 'Vibe Code Academy',
+      repo: 'Naseem1981/vibe-code-academy',
+      loadSidebar: '_sidebar.md',
+      subMaxLevel: 2,
+      homepage: 'introduction.md',
+      themeColor: '#6EE7B7',
+      search: {
+        placeholder: 'Search Level 1...',
+        noData: 'No results.',
+        depth: 3,
+      },
+      copyCode: {
+        buttonText: 'Copy',
+        errorText: 'Error',
+        successText: 'Copied'
+      },
+      pagination: {
+        previousText: '← Previous Day',
+        nextText: 'Next Day →',
+        crossChapter: true,
+      },
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+</body>
+</html>
