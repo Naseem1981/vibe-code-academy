@@ -2,21 +2,174 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Vibe Code Academy — Level 1</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css">
+  <title>Vibe Code Academy — Level 1</title>
+  <meta name="description" content="Level 1 — Learn to build real apps with Claude Code and Cursor in 15 days. Zero experience required." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>" />
+
+  <!-- Docsify Dark Theme -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css">
+
   <style>
-    :root { --theme-color: #6EE7B7; }
-    .sidebar { background-color: #0F172A; }
-    .sidebar-toggle { background-color: #0F172A; }
-    .markdown-section code {
-      background: #1E293B;
-      color: #6EE7B7;
-      border-radius: 4px;
-      padding: 2px 6px;
+    :root {
+      --theme-color: #F40D83;
+      --sidebar-background: #0F0B0B;
     }
-    .markdown-section pre > code { background: transparent; padding: 0; }
-    .sidebar-nav li.active > a { color: #6EE7B7; }
+
+    /* Sidebar */
+    .sidebar {
+      background-color: #0F0B0B !important;
+      border-right: 1px solid #2A1E1E;
+    }
+
+    .sidebar-toggle {
+      background-color: #0F0B0B !important;
+    }
+
+    .sidebar-nav a {
+      color: #928B81 !important;
+      font-size: 0.875rem;
+      transition: color 0.15s ease;
+    }
+
+    .sidebar-nav a:hover,
+    .sidebar-nav a.active {
+      color: #F40D83 !important;
+    }
+
+    .sidebar-nav strong {
+      color: #F5F0EF !important;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      display: block;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      padding-left: 0.5rem;
+    }
+
+    .app-name-link {
+      color: #F40D83 !important;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    /* Main content */
+    .content {
+      max-width: 860px;
+    }
+
+    .markdown-section {
+      font-size: 1rem;
+      line-height: 1.75;
+      color: #E2D9D9;
+    }
+
+    .markdown-section h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #F5F0EF;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.5rem;
+    }
+
+    .markdown-section h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #F5F0EF;
+      border-bottom: 1px solid #2A1E1E;
+      padding-bottom: 0.4rem;
+      margin-top: 2.5rem;
+    }
+
+    .markdown-section h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #D4CCCC;
+      margin-top: 1.75rem;
+    }
+
+    .markdown-section code {
+      background: #1A1212;
+      color: #F40D83;
+      border-radius: 4px;
+      padding: 0.15em 0.4em;
+      font-size: 0.875em;
+    }
+
+    .markdown-section pre {
+      background: #0F0B0B !important;
+      border: 1px solid #2A1E1E;
+      border-radius: 8px;
+    }
+
+    .markdown-section pre > code {
+      background: transparent;
+      color: #E2D9D9;
+      padding: 0;
+    }
+
+    .markdown-section blockquote {
+      border-left: 4px solid #F40D83;
+      background: #0F0B0B;
+      color: #928B81;
+      border-radius: 0 6px 6px 0;
+      padding: 0.75rem 1rem;
+    }
+
+    .markdown-section table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 0.9rem;
+    }
+
+    .markdown-section table th {
+      background: #1A1212;
+      color: #F5F0EF;
+      font-weight: 600;
+      text-align: left;
+      padding: 0.6rem 1rem;
+    }
+
+    .markdown-section table td {
+      border-bottom: 1px solid #2A1E1E;
+      padding: 0.6rem 1rem;
+      color: #D4CCCC;
+    }
+
+    .markdown-section table tr:hover td {
+      background: #1A121222;
+    }
+
+    .markdown-section input[type="checkbox"] {
+      accent-color: #F40D83;
+      margin-right: 0.5rem;
+    }
+
+    .search input {
+      background: #1A1212 !important;
+      border: 1px solid #2A1E1E !important;
+      color: #E2D9D9 !important;
+      border-radius: 6px;
+    }
+
+    .search input::placeholder {
+      color: #928B81 !important;
+    }
+
+    .pagination-item a {
+      color: #F40D83 !important;
+      border: 1px solid #F40D83 !important;
+      border-radius: 6px;
+      padding: 0.4rem 0.9rem;
+      transition: background 0.15s ease;
+    }
+
+    .pagination-item a:hover {
+      background: #F40D83 !important;
+      color: #0F0B0B !important;
+    }
   </style>
 </head>
 <body>
@@ -28,7 +181,8 @@
       loadSidebar: '_sidebar.md',
       subMaxLevel: 2,
       homepage: 'introduction.md',
-      themeColor: '#6EE7B7',
+      themeColor: '#F40D83',
+      auto2top: true,
       search: {
         placeholder: 'Search Level 1...',
         noData: 'No results.',

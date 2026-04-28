@@ -5,36 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vibe Code Academy — Level 2</title>
   <meta name="description" content="Level 2 — Build ClearCRM with Next.js 14, Supabase, and Bolt.new. Ship a live production CRM in 20 days." />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🟢</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>" />
 
   <!-- Docsify Dark Theme -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css">
 
   <style>
     :root {
-      --theme-color: #10B981;
-      --sidebar-background: #0F172A;
+      --theme-color: #F40D83;
+      --sidebar-background: #0F0B0B;
     }
 
     /* Sidebar */
     .sidebar {
-      background-color: #0F172A !important;
-      border-right: 1px solid #1E293B;
+      background-color: #0F0B0B !important;
+      border-right: 1px solid #2A1E1E;
+    }
+
+    .sidebar-toggle {
+      background-color: #0F0B0B !important;
     }
 
     .sidebar-nav a {
-      color: #94A3B8 !important;
+      color: #928B81 !important;
       font-size: 0.875rem;
       transition: color 0.15s ease;
     }
 
     .sidebar-nav a:hover,
     .sidebar-nav a.active {
-      color: #10B981 !important;
+      color: #F40D83 !important;
     }
 
     .sidebar-nav strong {
-      color: #F8FAFC !important;
+      color: #F5F0EF !important;
       font-size: 0.75rem;
       text-transform: uppercase;
       letter-spacing: 0.08em;
@@ -44,9 +48,8 @@
       padding-left: 0.5rem;
     }
 
-    /* App name in sidebar */
     .app-name-link {
-      color: #10B981 !important;
+      color: #F40D83 !important;
       font-weight: 700;
       font-size: 1rem;
       letter-spacing: -0.02em;
@@ -57,17 +60,16 @@
       max-width: 860px;
     }
 
-    /* Markdown body */
     .markdown-section {
       font-size: 1rem;
       line-height: 1.75;
-      color: #E2E8F0;
+      color: #E2D9D9;
     }
 
     .markdown-section h1 {
       font-size: 2rem;
       font-weight: 800;
-      color: #F8FAFC;
+      color: #F5F0EF;
       letter-spacing: -0.03em;
       margin-bottom: 0.5rem;
     }
@@ -75,8 +77,8 @@
     .markdown-section h2 {
       font-size: 1.4rem;
       font-weight: 700;
-      color: #F8FAFC;
-      border-bottom: 1px solid #1E293B;
+      color: #F5F0EF;
+      border-bottom: 1px solid #2A1E1E;
       padding-bottom: 0.4rem;
       margin-top: 2.5rem;
     }
@@ -84,33 +86,33 @@
     .markdown-section h3 {
       font-size: 1.1rem;
       font-weight: 600;
-      color: #CBD5E1;
+      color: #D4CCCC;
       margin-top: 1.75rem;
     }
 
     .markdown-section code {
-      background: #1E293B;
-      color: #10B981;
+      background: #1A1212;
+      color: #F40D83;
       border-radius: 4px;
       padding: 0.15em 0.4em;
       font-size: 0.875em;
     }
 
     .markdown-section pre {
-      background: #0F172A !important;
-      border: 1px solid #1E293B;
+      background: #0F0B0B !important;
+      border: 1px solid #2A1E1E;
       border-radius: 8px;
     }
 
     .markdown-section pre code {
       background: transparent;
-      color: #E2E8F0;
+      color: #E2D9D9;
     }
 
     .markdown-section blockquote {
-      border-left: 4px solid #10B981;
-      background: #0F172A;
-      color: #94A3B8;
+      border-left: 4px solid #F40D83;
+      background: #0F0B0B;
+      color: #928B81;
       border-radius: 0 6px 6px 0;
       padding: 0.75rem 1rem;
     }
@@ -122,62 +124,58 @@
     }
 
     .markdown-section table th {
-      background: #1E293B;
-      color: #F8FAFC;
+      background: #1A1212;
+      color: #F5F0EF;
       font-weight: 600;
       text-align: left;
       padding: 0.6rem 1rem;
     }
 
     .markdown-section table td {
-      border-bottom: 1px solid #1E293B;
+      border-bottom: 1px solid #2A1E1E;
       padding: 0.6rem 1rem;
-      color: #CBD5E1;
+      color: #D4CCCC;
     }
 
     .markdown-section table tr:hover td {
-      background: #1E293B22;
+      background: #1A121222;
     }
 
-    /* Checkbox list items */
     .markdown-section input[type="checkbox"] {
-      accent-color: #10B981;
+      accent-color: #F40D83;
       margin-right: 0.5rem;
     }
 
-    /* Search */
     .search input {
-      background: #1E293B !important;
-      border: 1px solid #334155 !important;
-      color: #E2E8F0 !important;
+      background: #1A1212 !important;
+      border: 1px solid #2A1E1E !important;
+      color: #E2D9D9 !important;
       border-radius: 6px;
     }
 
     .search input::placeholder {
-      color: #64748B !important;
+      color: #928B81 !important;
     }
 
-    /* Pagination */
     .pagination-item a {
-      color: #10B981 !important;
-      border: 1px solid #10B981 !important;
+      color: #F40D83 !important;
+      border: 1px solid #F40D83 !important;
       border-radius: 6px;
       padding: 0.4rem 0.9rem;
       transition: background 0.15s ease;
     }
 
     .pagination-item a:hover {
-      background: #10B981 !important;
-      color: #0F172A !important;
+      background: #F40D83 !important;
+      color: #0F0B0B !important;
     }
 
-    /* Cover page */
     section.cover {
-      background: linear-gradient(135deg, #0F172A 0%, #064E3B 100%) !important;
+      background: linear-gradient(135deg, #0F0B0B 0%, #3D0426 100%) !important;
     }
 
     section.cover h1 {
-      color: #10B981 !important;
+      color: #F40D83 !important;
     }
   </style>
 </head>
@@ -190,7 +188,7 @@
       repo: 'Naseem1981/vibe-code-academy',
       loadSidebar: '_sidebar.md',
       homepage: 'introduction.md',
-      themeColor: '#10B981',
+      themeColor: '#F40D83',
       auto2top: true,
       maxLevel: 3,
       subMaxLevel: 2,
@@ -213,24 +211,12 @@
         errorText: 'Error',
         successText: 'Copied!',
       },
-
-      plugins: [],
     };
   </script>
 
-  <!-- Docsify core -->
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
-
-  <!-- Dark theme plugin -->
-  <script src="https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"></script>
-
-  <!-- Search plugin -->
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
-
-  <!-- Copy code plugin -->
-  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
-
-  <!-- Pagination plugin -->
-  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
 </body>
 </html>
