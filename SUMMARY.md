@@ -31,11 +31,15 @@
 
 ## Downloads & Templates
 
-* [Environment Setup Checklist](https://naseem1981.github.io/vibe-code-academy/deliverables/environment-setup-checklist.pdf)
-* [First App Prompt Pack](https://naseem1981.github.io/vibe-code-academy/deliverables/first-app-prompt-pack.pdf)
-* [Vibe Coding Loop Workflow Card](https://naseem1981.github.io/vibe-code-academy/deliverables/vibe-coding-loop-workflow-card.pdf)
-* [CLAUDE.md Starter Templates](https://naseem1981.github.io/vibe-code-academy/deliverables/claude-md-starter-templates.pdf)
-* [Plugin Setup Checklist](https://naseem1981.github.io/vibe-code-academy/deliverables/plugin-setup-checklist.pdf)
-* [Bug Fix Prompt Templates + Fix Log](https://naseem1981.github.io/vibe-code-academy/deliverables/bug-fix-prompt-templates.pdf)
-* [Deploy Checklist](https://naseem1981.github.io/vibe-code-academy/deliverables/deploy-checklist.pdf)
-* [Personal Workflow Card Template](https://naseem1981.github.io/vibe-code-academy/deliverables/personal-workflow-card-template.pdf)
+Click any link to download the PDF directly.
+
+| Document | What it's for |
+|----------|---------------|
+| [Environment Setup Checklist](https://naseem1981.github.io/vibe-code-academy/deliverables/environment-setup-checklist.pdf) | Step-by-step checklist to get VS Code, Node.js, and Claude Code installed correctly |
+| [First App Prompt Pack](https://naseem1981.github.io/vibe-code-academy/deliverables/first-app-prompt-pack.pdf) | Copy-paste prompts for building your first apps — used in Day 2 |
+| [Vibe Coding Loop Card](https://naseem1981.github.io/vibe-code-academy/deliverables/vibe-coding-loop-workflow-card.pdf) | The core prompt → review → iterate → commit workflow on one card |
+| [CLAUDE.md Starter Templates](https://naseem1981.github.io/vibe-code-academy/deliverables/claude-md-starter-templates.pdf) | Ready-to-use CLAUDE.md templates for different project types |
+| [Plugin Setup Checklist](https://naseem1981.github.io/vibe-code-academy/deliverables/plugin-setup-checklist.pdf) | Every plugin covered in Day 5, with install commands and what each one does |
+| [Bug Fix Prompt Templates](https://naseem1981.github.io/vibe-code-academy/deliverables/bug-fix-prompt-templates.pdf) | Prompts for fixing the most common errors — keep this open while building |
+| [Deploy Checklist](https://naseem1981.github.io/vibe-code-academy/deliverables/deploy-checklist.pdf) | Everything to check before pushing your app live |
+| [Personal Workflow Card](https://naseem1981.github.io/vibe-code-academy/deliverables/personal-workflow-card-template.pdf) | Template for documenting your own build workflow — filled in by Day 15 |
