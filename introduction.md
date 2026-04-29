@@ -53,3 +53,18 @@ Work through one day per session. Do the steps — do not just read them. Each d
 You learn Claude Code first (Days 1–5) because it has less UI to navigate and teaches the core concepts clearly. You add Cursor at Day 6, and from there you use both together — each for what it does best.
 
 Let's build something.
+
+## Downloads & Templates
+
+Everything you need is ready to download as a PDF. Click any link below — it opens and downloads directly.
+
+| Document | What it's for |
+|----------|---------------|
+| [Environment Setup Checklist](https://naseem1981.github.io/vibe-code-academy/deliverables/environment-setup-checklist.pdf) | Step-by-step checklist to get VS Code, Node.js, and Claude Code installed correctly |
+| [First App Prompt Pack](https://naseem1981.github.io/vibe-code-academy/deliverables/first-app-prompt-pack.pdf) | Copy-paste prompts for building your first apps — used in Day 2 |
+| [Vibe Coding Loop Card](https://naseem1981.github.io/vibe-code-academy/deliverables/vibe-coding-loop-workflow-card.pdf) | The core prompt → review → iterate → commit workflow on one card |
+| [CLAUDE.md Starter Templates](https://naseem1981.github.io/vibe-code-academy/deliverables/claude-md-starter-templates.pdf) | Ready-to-use CLAUDE.md templates for different project types |
+| [Plugin Setup Checklist](https://naseem1981.github.io/vibe-code-academy/deliverables/plugin-setup-checklist.pdf) | Every plugin covered in Day 5, with install commands and what each one does |
+| [Bug Fix Prompt Templates](https://naseem1981.github.io/vibe-code-academy/deliverables/bug-fix-prompt-templates.pdf) | Prompts for fixing the most common errors — keep this open while building |
+| [Deploy Checklist](https://naseem1981.github.io/vibe-code-academy/deliverables/deploy-checklist.pdf) | Everything to check before pushing your app live |
+| [Personal Workflow Card](https://naseem1981.github.io/vibe-code-academy/deliverables/personal-workflow-card-template.pdf) | Template for documenting your own build workflow — filled in by Day 15 |
