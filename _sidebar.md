@@ -26,11 +26,11 @@
 
 **Downloads & Templates**
 
-* [Environment Setup Checklist](deliverables/environment-setup-checklist.md)
-* [First App Prompt Pack](deliverables/first-app-prompt-pack.md)
-* [Vibe Coding Loop Card](deliverables/vibe-coding-loop-workflow-card.md)
-* [CLAUDE.md Templates](deliverables/claude-md-starter-templates.md)
-* [Plugin Setup Checklist](deliverables/plugin-setup-checklist.md)
-* [Bug Fix Prompt Templates](deliverables/bug-fix-prompt-templates.md)
-* [Deploy Checklist](deliverables/deploy-checklist.md)
-* [Personal Workflow Card](deliverables/personal-workflow-card-template.md)
+* [Environment Setup Checklist](https://naseem1981.github.io/vibe-code-academy/deliverables/environment-setup-checklist.pdf)
+* [First App Prompt Pack](https://naseem1981.github.io/vibe-code-academy/deliverables/first-app-prompt-pack.pdf)
+* [Vibe Coding Loop Card](https://naseem1981.github.io/vibe-code-academy/deliverables/vibe-coding-loop-workflow-card.pdf)
+* [CLAUDE.md Templates](https://naseem1981.github.io/vibe-code-academy/deliverables/claude-md-starter-templates.pdf)
+* [Plugin Setup Checklist](https://naseem1981.github.io/vibe-code-academy/deliverables/plugin-setup-checklist.pdf)
+* [Bug Fix Prompt Templates](https://naseem1981.github.io/vibe-code-academy/deliverables/bug-fix-prompt-templates.pdf)
+* [Deploy Checklist](https://naseem1981.github.io/vibe-code-academy/deliverables/deploy-checklist.pdf)
+* [Personal Workflow Card](https://naseem1981.github.io/vibe-code-academy/deliverables/personal-workflow-card-template.pdf)
